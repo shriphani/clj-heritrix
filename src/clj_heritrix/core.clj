@@ -84,3 +84,11 @@
                user
                pass))
 
+
+(defn checkpoint-job
+  [job-loc user pass]
+  (send-action job-loc
+               "checkpoint"
+               nil
+               user
+               pass))
